@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HaidangCr7 ⚡ Sens Tool</title>
+<title>HaidangCr7 Sens Tool</title>
 
 <style>
 body{
-background:#0b0b0b;
+background:#0f0f0f;
 color:white;
 font-family:Arial;
 text-align:center;
@@ -15,7 +14,7 @@ padding:40px;
 }
 
 .box{
-background:#111;
+background:#1a1a1a;
 padding:20px;
 border-radius:10px;
 max-width:350px;
@@ -40,12 +39,11 @@ display:none;
 margin-top:20px;
 }
 </style>
-
 </head>
 
 <body>
 
-<h2>By HaidangCr7 ⚡</h2>
+<h2>⚡ HaidangCr7 Sens Tool</h2>
 
 <div class="box">
 
@@ -54,17 +52,16 @@ margin-top:20px;
 
 <div id="panel">
 
-<h3>Tool đã mở</h3>
-<p>Độ nhạy chuẩn:</p>
+<h3>Độ nhạy Free Fire</h3>
 
-<pre>
-General: 100
-Red Dot: 95
-2x Scope: 90
-4x Scope: 85
-AWM: 70
+<p>
+General: 100<br>
+Red Dot: 95<br>
+2x Scope: 90<br>
+4x Scope: 85<br>
+AWM: 70<br>
 Free Look: 75
-</pre>
+</p>
 
 </div>
 
@@ -72,8 +69,26 @@ Free Look: 75
 
 <script>
 
-let keyDB={
-"HDCR7-TEST01":Date.now()+86400000
+var keyDB={
+"HDCR7":9999999999999
+};
+
+function login(){
+
+var key=document.getElementById("key").value;
+
+if(keyDB[key]){
+document.getElementById("panel").style.display="block";
+}else{
+alert("Key sai");
+}
+
+}
+
+</script>
+
+</body>
+</html>"HDCR7-TEST01":Date.now()+86400000
 }
 
 function login(){

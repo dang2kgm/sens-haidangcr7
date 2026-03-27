@@ -1,9 +1,86 @@
-<script src="keys.js"></script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HaidangCr7 ⚡ Sens Tool</title>
+
+<style>
+body{
+background:#0b0b0b;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:40px;
+}
+
+.box{
+background:#111;
+padding:20px;
+border-radius:10px;
+max-width:350px;
+margin:auto;
+}
+
+input,button{
+width:100%;
+padding:10px;
+margin-top:10px;
+border-radius:6px;
+border:none;
+}
+
+button{
+background:red;
+color:white;
+}
+
+#panel{
+display:none;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>By HaidangCr7 ⚡</h2>
+
+<div class="box">
+
+<input id="key" placeholder="Nhập key">
+<button onclick="login()">Đăng nhập</button>
+
+<div id="panel">
+
+<h3>Tool đã mở</h3>
+<p>Độ nhạy chuẩn:</p>
+
+<pre>
+General: 100
+Red Dot: 95
+2x Scope: 90
+4x Scope: 85
+AWM: 70
+Free Look: 75
+</pre>
+
+</div>
+
+</div>
+
+<script>
+
+let keyDB={
+"HDCR7-TEST01":Date.now()+86400000
+}
+
 function login(){
 
 let key=document.getElementById("key").value
 
-if(keyDB[key] && Date.now() < keyDB[key]){
+if(keyDB[key] && Date.now()<keyDB[key]){
 
 document.getElementById("panel").style.display="block"
 
@@ -14,3 +91,8 @@ alert("Key sai hoặc hết hạn")
 }
 
 }
+
+</script>
+
+</body>
+</html>

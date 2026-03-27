@@ -1,0 +1,16 @@
+<script src="keys.js"></script>
+function login(){
+
+let key=document.getElementById("key").value
+
+if(keyDB[key] && Date.now() < keyDB[key]){
+
+document.getElementById("panel").style.display="block"
+
+}else{
+
+alert("Key sai hoặc hết hạn")
+
+}
+
+}

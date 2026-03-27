@@ -1,0 +1,16 @@
+<script src="keys.js"></script>
+<script>
+
+function createKey(){
+
+let key="HDCR7-"+Math.random().toString(36).substring(2,8).toUpperCase()
+
+keyDB[key]=Date.now()+86400000
+
+alert("Key mới: "+key)
+
+console.log(keyDB)
+
+}
+
+</script>
